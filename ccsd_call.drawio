@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-21T03:33:53.347Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="7O1aAiNGBNIFyrRzrZEP" version="13.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-21T03:41:11.286Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="FeN0xYzX6QgTiCLq-6l0" version="13.6.4" type="github">
   <diagram id="pUH0MC_lY3okQcDOXFTs" name="Page-1">
     <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -35,6 +35,24 @@
         </mxCell>
         <mxCell id="J5BrPKosjAkrrjW0uV-6-11" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.sqs;fillColor=#D9A741;gradientColor=none;" vertex="1" parent="1">
           <mxGeometry x="450" y="280" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="J5BrPKosjAkrrjW0uV-6-15" value="S3 Bucket" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="100" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="J5BrPKosjAkrrjW0uV-6-16" value="Cloudwatch Event" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="100" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="J5BrPKosjAkrrjW0uV-6-17" value="Lambda to query Athena" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="J5BrPKosjAkrrjW0uV-6-18" value="Athena" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="468" y="100" width="162" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="J5BrPKosjAkrrjW0uV-6-19" value="Output in json&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="527" y="250" width="143" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="J5BrPKosjAkrrjW0uV-6-20" value="SQS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="310" width="40" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
