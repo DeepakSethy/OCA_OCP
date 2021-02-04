@@ -1,0 +1,41 @@
+CREATE TABLESPACE  MODERN_**_2021
+DATAFILE 'C:\APP\deepak\ORADATA\ORACLE\MODERN_**_2021.dbf'  SIZE 2G AUTOEXTEND on NEXT 128M MAXSIZE 30G;
+ 
+CREATE USER MODERN_**_2021
+ IDENTIFIED BY "password123" PROFILE default
+ --Profile SERVICE_PROFILE_EPPIC
+ DEFAULT TABLESPACE MODERN_**_2021;
+ 
+ 
+C:\APP\DSETHY2\ORADATA\ORACLE\SYSTEM01.DBF
+ 
+col file_name format a60 
+set linesize 300
+SELECT f.file_id, f.file_name,bytes/1014/1024 as f_size, rownum as rn, AUTOEXTENSIBLE
+from dba_data_files f
+where f.tablespace_name like 'SYSTEM';
+
+
+grant select on V_$MYSTAT to MODERN_**_2021;
+grant select on V_$SESSION to MODERN_**_2021;
+grant select on V_$SQL to MODERN_**_2021;
+ 
+grant select on V_$STATNAME to MODERN_**_2021;
+grant select on V_$OPEN_CURSOR to MODERN_**_2021;
+grant select on v_$sqlarea to MODERN_**_2021;
+grant select on v_$sqltext to MODERN_**_2021;
+GRANT SELECT ON v_$px_session TO MODERN_**_2021;
+grant create sequence to MODERN_**_2021;
+-- Grant/Revoke role privileges 
+grant connect to MODERN_**_2021;
+grant resource to MODERN_**_2021;
+grant execute on dbms_lock to MODERN_**_2021;
+grant execute on DBMS_JOB to MODERN_**_2021;
+-- Grant/Revoke system privilegebtal_mr3_D0_1017_1es 
+grant create procedure to MODERN_**_2021;
+grant create session to MODERN_**_2021;
+grant create table to MODERN_**_2021;
+grant create view to MODERN_**_2021;
+grant select any dictionary to MODERN_**_2021;
+grant select any view to MODERN_**_2021;
+grant unlimited tablespace to MODERN_**_2021;
